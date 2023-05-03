@@ -87,6 +87,243 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*------------------------ Base Header - Footer Styles ------------------------*/
+
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+/* Header Styles */
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.header-divider {
+
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+}
+
+header nav ul li {
+
+}
+
+/* Footer Styles */
+
+footer .social-icons {
+
+}
+
+/*------------------------ Mobile Styles - Homepage ------------------------*/
+/*--------- Main Section ---------*/
+/* Hero */
+.hero-area {
+
+}
+
+h1{
+
+}
+
+/* Newsletter Form */
+h3{
+
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.form-description {
+
+}
+
+aside p{
+
+}
+
+.form {
+
+}
+
+button {
+
+}
+
+/* Amenities List */
+
+h2{
+
+}
+
+.amenities {
+
+}
+
+.amenity-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+article {
+
+}
+
+.fontawesome-icon {
+
+}
+
+.amenity-description {
+
+}
+
+/* Customer Reviews */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.reviews h2 {
+
+}
+
+.reviews h3 {
+
+}
+
+.reviews p {
+
+}
+/*------------------------ Mobile Styles - About ------------------------*/
+.mission{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.mission .content-wrapper {
+
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.about-contact-div {
+
+}
+
+/*------------------------ Mobile Styles - FAQ ------------------------*/
+
+.faqs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faqs .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faqs h2 {
+
+}
+
+.question {
+
+}
+
+.question h4{
+
+}
+
+.question p {
+}
+
+/*--------- Footer Section ---------*/
+/* Footer */
+
+footer {
+
+}
+
+.footer-section{
+
+}
+
+footer .content-wrapper{
+
+}
+
+/* Contact Info */
+
+.contact {
+
+}
+
+.contact h4 {
+
+}
+
+address {
+
+}
+
+.contact p {
+
+}
+
+/* Social Info */
+
+.social {
+
+}
+
+.social-icons {
+
+}
+
+/* Copyright Info */
+
+.copyright {
+
+}
+
+.copyright p {
+
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
