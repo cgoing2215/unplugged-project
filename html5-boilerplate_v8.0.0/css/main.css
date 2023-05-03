@@ -87,6 +87,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Global Styles */
+body {
+  color: #e2e3ed;
+  font-size: 16px;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
 /*------------------------ Base Header - Footer Styles ------------------------*/
 
 header, footer {
@@ -94,54 +104,86 @@ header, footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #202333;
 }
 /* Header Styles */
+
+header {
+  padding: 15px 0;
+}
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 .header-divider {
-
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+  background: #3a3a3a;
 }
 
 header nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
+  
 }
 
 header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 header nav ul li {
+  list-style: none;
+  font-size: 1.125em;
+}
 
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e2e3ed;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Footer Styles */
 
 footer .social-icons {
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-/*------------------------ Mobile Styles - Homepage ------------------------*/
+/* ==========================================================================
+   Home Page
+   ========================================================================== */
 /*--------- Main Section ---------*/
 /* Hero */
 .hero-area {
-
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
-h1{
-
+.hero-area h1{
+  width: 90%;
+  font-size: 2.25em;
+  margin: 0 30px;
 }
 
 /* Newsletter Form */
 h3{
-
+  font-size: 1.125em;
+  font-weight: 500;
 }
 
 aside {
@@ -149,6 +191,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  font-family: Arial, sans-serif;
 }
 
 .form-description {
@@ -164,17 +207,21 @@ aside p{
 }
 
 button {
-
+  background: #2a423a;
+  color: #e2e3ed;
 }
 
 /* Amenities List */
 
-h2{
-
+.amenities h2 {
+  margin-bottom: 60px;
+  font-size: 1.875em;
 }
 
 .amenities {
-
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .amenity-tile {
@@ -185,15 +232,20 @@ h2{
 }
 
 article {
-
+  width: 60%;
+  margin: 30px 0;
 }
 
 .fontawesome-icon {
-
+  margin-bottom: 40px;
 }
 
 .amenity-description {
 
+}
+
+.amenities p {
+  margin: 0;
 }
 
 /* Customer Reviews */
@@ -201,22 +253,29 @@ article {
 .reviews {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
 .reviews h2 {
-
+  margin-bottom:40px;
+  font-size: 1.875em;
 }
 
 .reviews h3 {
+  width: 60%;
+  margin: 20px 0;
 
+  font-size: 1.125em;
+  font-weight: 500;
 }
 
 .reviews p {
 
 }
-/*------------------------ Mobile Styles - About ------------------------*/
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
 .mission{
   display: flex;
   justify-content: center;
@@ -239,7 +298,9 @@ article {
 
 }
 
-/*------------------------ Mobile Styles - FAQ ------------------------*/
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
 
 .faqs {
   display: flex;
@@ -249,6 +310,7 @@ article {
 }
 
 .faqs .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,25 +318,31 @@ article {
 }
 
 .faqs h2 {
-
+  margin-bottom: 40px;
+  font-size: 1.875em;
 }
 
 .question {
-
+  margin-bottom:50px;
 }
 
 .question h4{
-
+  line-height: 24px;
 }
 
 .question p {
+  
 }
 
 /*--------- Footer Section ---------*/
 /* Footer */
 
 footer {
+  flex-direction: column;
+}
 
+footer p {
+  margin: 0;
 }
 
 .footer-section{
@@ -282,13 +350,14 @@ footer {
 }
 
 footer .content-wrapper{
-
+  width: 55%;
+  margin: 50px 0;
 }
 
 /* Contact Info */
 
 .contact {
-
+  margin-bottom: 50px;
 }
 
 .contact h4 {
@@ -305,23 +374,36 @@ address {
 
 /* Social Info */
 
-.social {
-
+.social h4 {
+  margin: 20px 0;
 }
 
 .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0 50px;
+}
 
+.social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Copyright Info */
 
 .copyright {
-
+  margin: 20px 0;
 }
 
 .copyright p {
 
 }
+
+/*----------------------------- MEDIA QUERIES -----------------------------*/
+
+@media 
 
 
 /* ==========================================================================
