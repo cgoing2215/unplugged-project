@@ -185,7 +185,6 @@ header nav ul li a {
 }
 
 .hero-area h1{
-  width: 90%;
   font-size: 3em;
   margin: 0 10px;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
@@ -348,6 +347,7 @@ article {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  width: 80%
 }
 
 .mission h2 {
@@ -418,7 +418,7 @@ article {
 .faqs .content-wrapper {
   margin: 50px 0 0 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -603,13 +603,12 @@ footer h4 {
 
   header {
     justify-content: space-between;
-    padding: 33px;
+    padding: 33px 0;
   }
 
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
-    margin: 0;
   }
 
   header nav {
@@ -684,14 +683,18 @@ footer h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
+  }
+
+  .mission .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
   .mission-content p {
-    width: 100%;
-  }
-
-  .contact-section .content-wrapper h2 {
-    width:
+    width: 50%;
   }
 
   .contact-content {
@@ -699,10 +702,18 @@ footer h4 {
     justify-content: space-between;
     align-items: flex-start;
   }
+  
+  .about-contact-div {
+  }
+
+  div.about-contact-div {
+    width: 40%;
+  }
 
   /* ===FAQ PAGE===*/
   .faq .content-wrapper {
     justify-content: space-between;
+    width: 960px;;
   }
 
   .faq-content {
@@ -722,10 +733,52 @@ footer h4 {
     width: 960px;
   }
 
-/* ===ABOUT PAGE===*/
+  .hero-area h1 {
+    align-items: center;
+    width: 
+  }
 
+  aside .content-wrapper {
+    width: 58%;
+    justify-content: space-between;
+  }
+
+  .amenities h2 {
+    width: 90%;
+  }
+
+  .amenities article {
+    flex-basis: 40%;
+    padding: 0;
+  }
+
+  .reviews article div {
+    width: 35%;
+    margin: 0;
+  }
+  
+  .reviews article {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+  
+    .reviews h2 {
+      padding-left: 10%;
+    }
+  }
+
+/* ===ABOUT PAGE===*/
+  .mission h2, .contact-content .content-wrapper h2 {
+    width: ;
+  }
 
 /* ===FAQ PAGE===*/
+
+  .faq h2 {
+    width: 100%;
+  }
+
 }
 
 
