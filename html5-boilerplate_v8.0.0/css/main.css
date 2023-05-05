@@ -88,9 +88,43 @@ textarea {
    ========================================================================== */
 
 /* Global Styles */
+
+html {
+  font-size: 16px;
+}
+
 body {
   color: #e2e3ed;
-  font-size: 16px;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul, 
+ol {
+  list-style: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  line-height: 1.285em;
+}
+
+address {
+  font-style: normal;
 }
 
 .content-wrapper {
@@ -99,7 +133,8 @@ body {
 }
 /*------------------------ Base Header Styles ------------------------*/
 
-header, footer {
+header, 
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,6 +153,7 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  width: 70%;
 }
 
 .header-divider {
@@ -151,22 +187,17 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin: 0;
   padding: 0;
 }
 
 header nav ul li {
-  list-style: none;
   font-size: 1.4em;
   justify-content: space-between;
 }
 
 header nav ul li a {
-  text-decoration: none;
   text-transform: uppercase;
-  color: #e2e3ed;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
 }
 
 /* ==========================================================================
@@ -194,9 +225,6 @@ header nav ul li a {
 /* Newsletter Form */
 h3{
   font-size: 1.3em;
-  font-weight: 500;
-  margin-bottom: 20px;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
 }
 
 aside {
@@ -210,10 +238,6 @@ aside {
 
 .form-description {
   padding: 0 15px;
-}
-
-aside p{
-
 }
 
 .form {
@@ -237,16 +261,18 @@ button {
   width: 100%;
   height: 60px;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
   border-style: none;
 }
 
 /* Amenities List */
 
+.amenities .content-wrapper {
+  width: 70%;
+}
+
 .amenities h2 {
-  margin: 0 0 30px 0;
+  margin-bottom: 60px;
   font-size: 2.5em;
-  font-family: 'Poppins', sans-serif;
   padding: 0 15px;
 }
 
@@ -275,7 +301,7 @@ article {
 }
 
 .amenity-description {
-  font-family: 'Open Sans', sans-serif;
+  
 }
 
 .amenities p {
@@ -294,8 +320,8 @@ article {
 
 .reviews h2 {
   font-size: 2.8em;
-  font-family: 'Poppins', sans-serif;
   font-weight: bolder;
+  margin-bottom: 40px;
 }
 
 .reviews h3 {
@@ -303,16 +329,10 @@ article {
   margin: 20px 0;
   font-size: 1.em;
   font-weight: 500;
-  font-family: 'Poppins', sans-serif;
-}
-
-.reviews p {
-  font-family: 'Open Sans', sans-serif;
-
 }
 
 .reviews .content-wrapper {
-  width: 90%;
+  width: 70%;
   margin: 0 30px;
 }
 
@@ -320,16 +340,8 @@ article {
   width: 100%;
 }
 
-.reviews article div {
-  padding-bottom: 38px;
-}
-
 .reviews img {
   width: 100%;
-}
-
-.reviews-image {
-  text-align: center;
 }
 
 /* ==========================================================================
@@ -347,25 +359,22 @@ article {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 80%
+  width: 70%;
 }
 
 .mission h2 {
   font-size: 2.1em;
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
 
 .mission article {
   font-family: 'Poppins', sans-serif;
   width: 100%;
-  padding: 0;
   margin: 0;
 }
 
 .mission p {
   font-weight: lighter;
-  font-size: 1.1em;
 }
 
 .contact-section {
@@ -378,7 +387,6 @@ article {
 }
 
 .contact-section h2 {
-  font-family: 'Poppins', sans-serif;
   font-size: 2.2em;
 }
 
@@ -388,7 +396,6 @@ article {
 
 .about-contact-div address {
   font-weight: lighter;
-  font-style: normal;
 }
 
 /* ==========================================================================
@@ -406,11 +413,9 @@ article {
 .faqs h2 {
   margin-bottom: 40px;
   font-size: 1.875em;
-  font-family: 'Poppins', sans-serif;
 }
 
 .faqs h4 {
-  font-family: 'Poppins', sans-serif;
   font-size: 1.2em;;
   line-height: 24px;
 }
@@ -428,7 +433,7 @@ article {
 }
 
 .question p {
-  font-family: 'Open Sans', sans-serif;
+  
 }
 
 /*--------- Footer Section ---------*/
@@ -440,8 +445,6 @@ footer {
 
 footer p {
   margin: 0;
-  font-size: 1em;
-  font-style: normal;
 }
 
 footer .content-wrapper{
@@ -451,7 +454,6 @@ footer .content-wrapper{
 
 .footer-section{
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
 }
 
 /* Contact Info */
@@ -462,14 +464,9 @@ footer .content-wrapper{
 
 footer h4 {
   font-size: 1.4em;
-  font-family: 'Poppins', sans-serif;
 }
 
 /* Social Info */
-
-.social {
-  margin-bottom: 50px;
-}
 
 .social div {
   align-items: center;
@@ -479,13 +476,13 @@ footer h4 {
   margin: 30px 0;
 }
 
-.social-icons {
+footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.social-icons p {
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -498,9 +495,7 @@ footer h4 {
 }
 
 .copyright p {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 501;
-  text-align: justify;
   font-size: .9em;
 }
 
@@ -685,13 +680,13 @@ footer h4 {
 
   .mission .content-wrapper div {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .mission-content {
-    flex-basis: 47%;
     padding: 20px 10px;
     line-height: 1.5em;
+    flex-basis: 45%;
   }
 
   .mission .content-wrapper {
@@ -702,7 +697,7 @@ footer h4 {
   }
 
   .mission-content p {
-    width: 50%;
+    width: 45%;
     padding: 0px 10px;
   }
 
@@ -718,22 +713,17 @@ footer h4 {
 
   /* ===FAQ PAGE===*/
   .faqs .content-wrapper {
-    width: 960px;
+    justify-content: space-between;
   }
 
   .faqs .content-wrapper .question-wrapper {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-around;
   }
 
   .faqs div .question {
     flex-basis: 40%;
-  }
-
-  .faq h2 {
-    width: 100%;
   }
 }
 
@@ -745,9 +735,13 @@ footer h4 {
     width: 960px;
   }
 
+  header {
+    padding: 15px 0;
+  }
+
   .hero-area h1 {
     align-items: center;
-    width: 
+    width: 60%;
   }
 
   aside .content-wrapper {
@@ -756,15 +750,15 @@ footer h4 {
   }
 
   .amenities h2 {
-    width: 70%;
+    width: 90%;
   }
 
   .amenity-tile {
-    flex-basis: 30%;
+    flex-basis: 33%;
   }
 
   .reviews article div {
-    width: 35%;
+    width: 42%;
     margin: 0;
   }
   
@@ -781,7 +775,7 @@ footer h4 {
 
 /* ===ABOUT PAGE===*/
   .mission h2, .contact-content .content-wrapper h2 {
-    width: ;
+    width: 95%;
   }
 
 /* ===FAQ PAGE===*/
