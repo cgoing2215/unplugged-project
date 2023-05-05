@@ -244,8 +244,8 @@ button {
 /* Amenities List */
 
 .amenities h2 {
-  margin: 0 0 40px 0;
-  font-size: 2.4em;
+  margin: 0 0 30px 0;
+  font-size: 2.5em;
   font-family: 'Poppins', sans-serif;
   padding: 0 15px;
 }
@@ -638,17 +638,20 @@ footer h4 {
     flex-flow: row nowrap;
   }
 
-  .amenities article {
+  .amenities-tiles {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    flex-basis: 50%;
+    width: 100%;
+  }
 
+  .amenity-tile {
+    flex-basis: 50%;
   }
 
   .amenities .amenity-description {
-    width: 55%;
+    width: 100%;
   }
 
   .reviews article {
@@ -679,11 +682,16 @@ footer h4 {
 
 
 /* ===ABOUT PAGE===*/
-  .mission-content {
+
+  .mission .content-wrapper div {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .mission-content {
+    flex-basis: 47%;
+    padding: 20px 10px;
+    line-height: 1.5em;
   }
 
   .mission .content-wrapper {
@@ -695,6 +703,7 @@ footer h4 {
 
   .mission-content p {
     width: 50%;
+    padding: 0px 10px;
   }
 
   .contact-content {
@@ -704,19 +713,22 @@ footer h4 {
   }
   
   .about-contact-div {
-  }
-
-  div.about-contact-div {
-    width: 40%;
+    flex-basis: 40%;
   }
 
   /* ===FAQ PAGE===*/
-  .faq .content-wrapper {
-    justify-content: space-between;
-    width: 960px;;
+  .faqs .content-wrapper {
+    width: 960px;
   }
 
-  .faq-content {
+  .faqs .content-wrapper .question-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+  }
+
+  .faqs div .question {
     flex-basis: 40%;
   }
 
@@ -744,12 +756,11 @@ footer h4 {
   }
 
   .amenities h2 {
-    width: 90%;
+    width: 70%;
   }
 
-  .amenities article {
-    flex-basis: 40%;
-    padding: 0;
+  .amenity-tile {
+    flex-basis: 30%;
   }
 
   .reviews article div {
