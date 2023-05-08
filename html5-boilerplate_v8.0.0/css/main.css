@@ -496,7 +496,7 @@ footer h4 {
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -504,6 +504,9 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2em;
+  border: #527158 solid 5px;
+  border-radius: 40px;
 }
 
 /* Copyright Info */
