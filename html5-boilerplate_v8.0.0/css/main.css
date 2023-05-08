@@ -131,6 +131,14 @@ address {
   width: 90%;
   margin: 50px 0;
 }
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
 /*------------------------ Base Header Styles ------------------------*/
 
 header, 
@@ -163,15 +171,13 @@ header .content-wrapper {
   background: #3a3a3a;
 }
 
-header a {
-  margin: 0;
-  text-align: center;
-}
 
-header img {
-  width: 65%;
+header figure {
+  width: 80%;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin: 0;
+  flex-flow: nowrap;
 }
 
 header nav {
@@ -209,8 +215,7 @@ header nav ul li a {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url("../../unplugged-design-docs/img/unplugged-retreat.jpg"); 
-  background-image: center;
+  background: url("../../unplugged-design-docs/img/unplugged-retreat.jpg") center no-repeat #333;
   background-size: cover;
   padding-bottom: 210px;
 }
@@ -253,12 +258,14 @@ aside {
   font-family: 'Poppins', sans-serif;
   font-style: italic;
   color: #2a423a;
+  padding-left: 10px;
 }
+
 
 button {
   background: #2a423a;
   color: #e2e3ed;
-  width: 100%;
+  width: 102.5%;
   height: 60px;
   text-transform: uppercase;
   border-style: none;
@@ -271,8 +278,7 @@ button {
 }
 
 .amenities h2 {
-  margin-bottom: 60px;
-  font-size: 2.5em;
+  margin-bottom: 30px;
   padding: 0 15px;
 }
 
@@ -280,7 +286,7 @@ button {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url("../../unplugged-design-docs/img/unplugged-retreat-features.jpg");
+  background: url("../../unplugged-design-docs/img/unplugged-retreat-features.jpg")  center no-repeat #333;;
   background-size: cover;
 }
 
@@ -319,7 +325,6 @@ article {
 }
 
 .reviews h2 {
-  font-size: 2.8em;
   font-weight: bolder;
   margin-bottom: 40px;
 }
@@ -333,7 +338,7 @@ article {
 
 .reviews .content-wrapper {
   width: 70%;
-  margin: 0 30px;
+  margin: 10 30px;
 }
 
 .reviews article {
@@ -599,11 +604,15 @@ footer .social-icons p {
   header {
     justify-content: space-between;
     padding: 33px 0;
+    width: 100%;
+    
   }
 
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+    margin: 0 10px 0 10px;
+    flex-wrap: nowrap;
   }
 
   header nav {
@@ -624,6 +633,10 @@ footer .social-icons p {
 
   aside p {
     width: 60%
+  }
+
+  button {
+    width: 106%;
   }
 
   aside .content-wrapper {
@@ -747,6 +760,10 @@ footer .social-icons p {
   aside .content-wrapper {
     width: 58%;
     justify-content: space-between;
+  }
+
+  button {
+    width: 104%;
   }
 
   .amenities h2 {
