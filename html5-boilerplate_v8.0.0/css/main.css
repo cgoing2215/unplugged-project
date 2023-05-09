@@ -121,6 +121,7 @@ h4 {
 
 p {
   line-height: 1.285em;
+  font-size: 1.2em;;
 }
 
 address {
@@ -161,7 +162,7 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
-  width: 70%;
+  width: 90%;
 }
 
 .header-divider {
@@ -204,6 +205,7 @@ header nav ul li {
 header nav ul li a {
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1.4em;
 }
 
 /* ==========================================================================
@@ -217,19 +219,21 @@ header nav ul li a {
   flex-flow: row wrap;
   background: url("../../unplugged-design-docs/img/unplugged-retreat.jpg") center no-repeat #333;
   background-size: cover;
-  padding-bottom: 210px;
+  padding-bottom: 400px;
 }
 
 .hero-area h1{
   font-size: 3em;
-  margin: 0 10px;
+  line-height: 110%;
+  padding-top: 7%;
+  margin: 0;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
 
 /* Newsletter Form */
 h3{
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 aside {
@@ -242,11 +246,15 @@ aside {
 }
 
 .form-description {
-  padding: 0 15px;
+  padding: 0;
+}
+
+.form-description p {
+  padding-bottom: 5%;
 }
 
 .form {
-  padding: 0 15px;
+  padding: 0 0;
 }
 
 .text-box {
@@ -261,7 +269,6 @@ aside {
   padding-left: 10px;
 }
 
-
 button {
   background: #2a423a;
   color: #e2e3ed;
@@ -274,12 +281,12 @@ button {
 /* Amenities List */
 
 .amenities .content-wrapper {
-  width: 70%;
+  width: 90%;
 }
 
 .amenities h2 {
   margin-bottom: 30px;
-  padding: 0 15px;
+  font-size: 2.3em;
 }
 
 .amenities {
@@ -302,14 +309,14 @@ article {
   margin: 30px 0;
 }
 
-.fontawesome-icon {
-  padding-bottom: 30px;
-  font-size: 3.5em;
-}
-
 .amenities p {
   margin: 0;
   text-align: center;
+}
+
+.fontawesome-icon {
+  padding-bottom: 30px;
+  font-size: 3.5em;
 }
 
 /* Customer Reviews */
@@ -334,7 +341,7 @@ article {
 }
 
 .reviews .content-wrapper {
-  width: 70%;
+  width: 90%;
   margin: 10 30px;
 }
 
@@ -501,12 +508,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2em;
-  border: #527158 solid 5px;
-  border-radius: 40px;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 /* Copyright Info */
@@ -517,7 +529,7 @@ footer .social-icons p {
 
 .copyright p {
   font-weight: 501;
-  font-size: .9em;
+  margin-bottom: 15%
 }
 
 
@@ -632,7 +644,8 @@ footer .social-icons p {
   }
 
   header nav {
-    width: 20%;
+    width: 30%;
+    padding-right: 5%;
   }
 
   header nav ul {
@@ -640,15 +653,16 @@ footer .social-icons p {
   }
 
   header img {
-    width: 40%;
+    width: 45%;
+    padding-left: 10%;
   }
 
   .header-divider{
     display: none;
   }
 
-  aside p {
-    width: 60%
+  .form-description p {
+    width: 60%;
   }
 
   button {
@@ -660,6 +674,14 @@ footer .social-icons p {
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
+  }
+
+  .amenities .content-wrapper {
+    width: 85%;
+  }
+
+  .amenities h2 {
+    padding-left: 6%;
   }
 
   .amenities-tiles {
@@ -678,6 +700,15 @@ footer .social-icons p {
     width: 100%;
   }
 
+  .reviews .content-wrapper {
+    width: 85%;
+    padding-left: 3%;
+  }
+
+  .reviews h2 {
+    font-size: 2.5em;
+  }
+
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -690,8 +721,8 @@ footer .social-icons p {
   /* Footer */
 
   footer .content-wrapper {
-    width: 65%;
-    margin: 100px 0;
+    width: 55%;
+    margin: 50px 0;
   }
 
   .footer-section {
@@ -702,6 +733,18 @@ footer .social-icons p {
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  .social div {
+    width: 150%;
+  }
+
+  .social h4 {
+    width: 150%;
+  }
+
+  footer .social-icons div {
+    justify-content: space-between;
   }
 
 
@@ -775,6 +818,11 @@ footer .social-icons p {
   .hero-area h1 {
     align-items: center;
     width: 60%;
+    padding-top: 0
+  }
+
+  .hero-area {
+    padding-bottom: 18%;
   }
 
   aside .content-wrapper {
@@ -784,6 +832,10 @@ footer .social-icons p {
 
   button {
     width: 104%;
+  }
+
+  .amenities .content-wrapper {
+    flex-basis: 70%;
   }
 
   .amenities h2 {
@@ -806,7 +858,7 @@ footer .social-icons p {
     }
   
     .reviews h2 {
-      padding-left: 10%;
+      padding-left: 5%;
     }
   }
 
