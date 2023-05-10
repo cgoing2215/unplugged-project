@@ -234,6 +234,7 @@ header nav ul li a {
 /* Newsletter Form */
 h3{
   font-size: 1.5em;
+  width: 70%;
 }
 
 aside {
@@ -334,7 +335,7 @@ article {
 }
 
 .reviews h3 {
-  width: 60%;
+  width: 70%;
   margin: 20px 0;
   font-size: 1.em;
   font-weight: 500;
@@ -437,11 +438,11 @@ article {
 
 .faqs h2 {
   margin-bottom: 40px;
-  font-size: 1.875em;
+  font-size: 2.5em;
 }
 
 .faqs h4 {
-  font-size: 1.2em;;
+  font-size: 1.6em;;
   line-height: 24px;
 }
 
@@ -454,11 +455,7 @@ article {
 }
 
 .question {
-  margin-bottom:50px;
-}
-
-.question p {
-  
+  margin-bottom: 90px;
 }
 
 /*--------- Footer Section ---------*/
@@ -788,18 +785,25 @@ footer .social-icons p i {
 
   /* ===FAQ PAGE===*/
   .faqs .content-wrapper {
-    justify-content: space-between;
+    flex-basis: 80%;
   }
 
   .faqs .content-wrapper .question-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    margin: 0;
+    justify-content: space-between;
   }
 
   .faqs div .question {
-    flex-basis: 40%;
+    flex-basis: 45%;
+    justify-content: space-between;
   }
+
+  .question {
+    margin-bottom: 45px;
+  }
+
 }
 
 /*------------------------------ DESKTOP ------------------------------*/
@@ -871,6 +875,11 @@ footer .social-icons p i {
   
     .reviews h2 {
       padding-left: 5%;
+    }
+
+    .reviews h3 {
+      flex-flow: row nowrap;
+      flex-basis: 100%;
     }
   }
 
