@@ -217,7 +217,7 @@ header nav ul li a {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url("../../unplugged-design-docs/img/unplugged-retreat.jpg") center no-repeat #333;
+  background: url("../img/unplugged-retreat.jpg") center no-repeat #333;
   background-size: cover;
   padding-bottom: 400px;
 }
@@ -293,7 +293,7 @@ button {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url("../../unplugged-design-docs/img/unplugged-retreat-features.jpg")  center no-repeat #333;;
+  background: url("../img/unplugged-retreat-features.jpg")  center no-repeat #333;;
   background-size: cover;
 }
 
