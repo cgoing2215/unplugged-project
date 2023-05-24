@@ -254,8 +254,10 @@ aside {
   padding-bottom: 5%;
 }
 
-.form {
-  padding: 0 0;
+.form div{
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
 }
 
 .text-box {
@@ -267,6 +269,7 @@ aside {
   font-family: 'Poppins', sans-serif;
   font-style: italic;
   color: #2a423a;
+  box-sizing: border-box;
 }
 
 button {
@@ -276,6 +279,7 @@ button {
   height: 60px;
   text-transform: uppercase;
   border-style: none;
+  box-sizing: border-box;
 }
 
 /* Amenities List */
@@ -841,10 +845,6 @@ footer .social-icons p i {
   aside .content-wrapper {
     width: 58%;
     justify-content: space-between;
-  }
-
-  button {
-    width: 104%;
   }
 
   .amenities .content-wrapper {
