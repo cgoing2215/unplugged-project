@@ -270,6 +270,7 @@ aside {
   font-style: italic;
   color: #2a423a;
   box-sizing: border-box;
+  padding-left: 1rem;
 }
 
 button {
@@ -489,6 +490,7 @@ footer .content-wrapper{
 
 footer h4 {
   font-size: 1.4em;
+  margin-bottom: 1rem;
 }
 
 /* Social Info */
@@ -498,12 +500,12 @@ footer h4 {
 }
 
 .social h4 {
-  margin: 30px 0;
+  margin-bottom: 1rem;
 }
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -515,10 +517,11 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 .25rem;
 }
 
 footer .social-icons p i {
-  font-size: 1.3125em;
+  font-size: 1em;
 }
 
 /* Copyright Info */
@@ -528,7 +531,8 @@ footer .social-icons p i {
 }
 
 .copyright p {
-  font-weight: 501;
+  font-weight: 500;
+  font-size: .75rem;
   margin-bottom: 15%
 }
 
@@ -705,7 +709,12 @@ footer .social-icons p i {
   }
 
   .reviews h2 {
-    font-size: 2.5em;
+    font-size: 2.25em;
+  }
+
+  .reviews h3 {
+    font-size: 1.25rem;
+    letter-spacing: .1rem;
   }
 
   .reviews article {
@@ -717,6 +726,10 @@ footer .social-icons p i {
     width: 49%;
   }
 
+  .reviews p {
+    font-size: .9rem;
+  }
+
   /* Footer */
 
   footer .content-wrapper {
@@ -726,7 +739,7 @@ footer .social-icons p i {
 
   .footer-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
